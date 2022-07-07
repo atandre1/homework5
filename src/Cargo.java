@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Cargo extends Land{
+public class Cargo extends Land {
     private int loadCapacity;
 
     public Cargo() {
@@ -20,11 +20,12 @@ public class Cargo extends Land{
                 ", power=" + power + '}';
     }
 
-    public void load(){
+    public void load() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter the weight of your cargo");
+        System.out.println("Please enter the weight of your cargo in kilograms");
         int cargo = scan.nextInt();
-
+        if (cargo <= loadCapacity) System.out.println("The truck is loaded");
+        else System.out.println("You need a bigger truck");
     }
 
 }

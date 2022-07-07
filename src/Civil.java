@@ -1,4 +1,6 @@
-public class Civil extends Air{
+import java.util.Scanner;
+
+public class Civil extends Air {
     private int passengersAmount;
     boolean businessClass;
 
@@ -26,4 +28,11 @@ public class Civil extends Air{
                 ", power=" + power + '}';
     }
 
+    public void load() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the number of passengers");
+        int passengers = scan.nextInt();
+        if (passengers <= passengersAmount) System.out.println("The plane is ready for flight");
+        else System.out.println("You need a bigger plane");
+    }
 }

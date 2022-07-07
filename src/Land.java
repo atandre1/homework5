@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Land extends Transport{
+public class Land extends Transport {
     private int wheelsAmount;
     public int fuelConsumption;
 
@@ -22,7 +22,6 @@ public class Land extends Transport{
                 ", fuelConsumption=" + fuelConsumption +
                 ", power=" + power + '}';
     }
-
 
 
 }

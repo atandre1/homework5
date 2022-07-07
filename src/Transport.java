@@ -26,7 +26,7 @@ public class Transport {
                 '}';
     }
 
-    public double power(){
+    public double power() {
         power = horsePower * 0.74;
         return power;
     }

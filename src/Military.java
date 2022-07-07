@@ -1,4 +1,4 @@
-public class Military extends Air{
+public class Military extends Air {
     private boolean catapult;
     int rockets;
 
@@ -16,5 +16,20 @@ public class Military extends Air{
                 "catapult=" + catapult +
                 ", rockets=" + rockets +
                 ", power=" + power + '}';
+    }
+
+    public void fire() {
+        for (int a = 0; a < rockets; a++) {
+            System.out.println("The rocket is fired!");
+        }
+        rockets = 0;
+        System.out.println("Out of ammo!");
+        System.out.println();
+
+    }
+
+    public void catapultGo() {
+        if (catapult == true) System.out.println("The ejection was successful!");
+        else System.out.println("You don't have catapult system!");
     }
 }

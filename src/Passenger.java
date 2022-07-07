@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Passenger extends Land{
+public class Passenger extends Land {
     String carBody;
     int passengers;
     private double distance;
@@ -24,7 +24,8 @@ public class Passenger extends Land{
                 ", passengers=" + passengers +
                 ", power=" + power + '}';
     }
-    public double distance(){
+
+    public double distance() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter travel time in hours");
         double time = input.nextInt();
@@ -33,7 +34,8 @@ public class Passenger extends Land{
         return distance;
 
     }
-    public double fuel(){ // не понимаю условия сделать этот метод приватным. Тогда из main не запускается.
+
+    public double fuel() { // не понимаю условия сделать этот метод приватным. Тогда из main не запускается.
         double fuel = this.distance / 100 * fuelConsumption;
         System.out.println(fuel + " liters of fuel.");
         return fuel;
